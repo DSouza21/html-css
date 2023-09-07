@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Astronauta</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black url('imagens/espaco.jpg') center top no-repeat;
+            background-size: cover;
+        }
+
+       /* fiz dessa forma e também funcionou
+       img { 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90vw;
+            max-height: 90vh;
+        } 
+        */
+
+        div#astronauta {
+            max-width: 500px;
+            height: 60vh;
+            background: url('imagens/astronauta.png') center center no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="astronauta">
+
+    </div>
+
+    <!-- fiz dessa forma e também funcionou
+
+        <img src="imagens/astronauta.png" alt="Astronauta"> 
+
+    -->
+</body>
+</html>
