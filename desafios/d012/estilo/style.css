@@ -9,101 +9,13 @@
     padding: 0;
 }
 
-body {
-    font-family: var(--fonte-padrao);
+html, body {
+    min-height: 100vh;
+    background-color: rgb(150, 147, 147);
 }
 
-:root {
-    --fonte-padrao: Verdana, sans-serif;;
+root {
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
     --fonte-destaque: 'Passion One', cursive;
-    --fonte-poema: 'Sriracha', cursive;
-}
-
-header {
-    background-color: black;
-    color: white;
-    padding-top: 50px;
-}
-
-header > h1 {
-    text-align: center;
-    font-family: var(--fonte-destaque);
-    font-weight: bold;
-    font-size: 10vw;
-}
-
-header span {
-    font-size: 7vw;
-}
-
-header > p {
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-section#section001 {
-    height: 33vh;
-    padding-top: 20vw;
-    padding-bottom: 20vw;
-}
-
-section.normal {
-    padding-top: 10vh;
-    padding-left: 30px;
-    padding-bottom: 10vw;
-    height: 100vw;
-    position: relative;
-}
-
-section p {
-    font-family: var(--fonte-poema);
-    font-size: 3.5vw;
-    line-height: 7vw;
-}
-
-section.normal p {
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-section.imagem {
-    position: relative;
-    height: 65vw;
-}
-
-section#imagem001 {
-    background: url('../imagens/background001.jpg') no-repeat right bottom fixed;
-    background-size: cover;
-}
-
-section#imagem002 {
-    background: url('../imagens/background002.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-
-section.imagem p {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.553);
-    padding: 10px 5px 10px 5px;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(0, -50%);
-}
-
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    height: 5vh;
-    position: relative;
-}
-footer > p {
-    min-width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    --fonte-conteudo: 'Sriracha', cursive;
 }
