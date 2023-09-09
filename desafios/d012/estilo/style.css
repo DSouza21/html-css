@@ -48,6 +48,35 @@ a:hover {
     text-decoration: underline;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte-conteudo);
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+
+section.normal {
+    background-color: white;
+    padding-left: 30px;
+}
+
+section.normal p {
+    margin-bottom: 10vh;
+}
+
+section.imagem {
+    background-color: rgb(160, 76, 76);
+    color: white;
+    padding-left: 25px;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 5px;
+}
+
 footer {
     background-color: black;
     color: white;
