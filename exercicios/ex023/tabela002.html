@@ -13,12 +13,19 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 5px;
         }
         thead, tfoot {
-            background-color: rgb(111, 111, 111);
+            background-color: rgb(86, 86, 86);
             color: white;
             text-shadow: 1px 1px 1px black;
         }
@@ -31,10 +38,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Ferderativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
@@ -151,7 +159,7 @@
 
         <tfoot>
             <tr>
-                <th>População total</th>
+                <th scope="row">População total</th>
                 <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
