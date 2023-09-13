@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -20,10 +21,21 @@
             background-color: lightgray;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(86, 86, 86);
+        }
+
         td, th {
             border: 1px solid black;
             padding: 5px;
         }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: rgb(86, 86, 86);
             color: white;
@@ -38,7 +50,7 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
-        <caption>População das Unidades Ferderativas</caption>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
